@@ -11,14 +11,14 @@ So if you solved it, you’re now allowed to feel good about yourself.)
 
 */
 
-for (var i = 1; i <= 100; i++) {
-  if (i % 3 == 0 && i % 5 == 0) {
+for (var i = 1; i <= 100; i++) { // -------- Loop the numbers starting from 1 and including 100
+  if (i % 3 == 0 && i % 5 == 0) { // ------- First we need to check if the number is both divisible by 3 and 5 so it does not log just Fizz or Buzz when such a number is encountered
     console.log("FizzBuzz");
-  }else if (i % 3 == 0) {
+  }else if (i % 3 == 0) { // --------------- Logs Fizz if divisible by 3
     console.log("Fizz");
-  }else if (i % 5 == 0) {
+  }else if (i % 5 == 0) { // --------------- Logs Buzz if divisible by 5
     console.log("Buzz");
   }else {
-    console.log(i);
+    console.log(i); // --------------------- Logs the number if not divisible by either 3 or 5  
   }
 }
